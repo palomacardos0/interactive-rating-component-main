@@ -21,11 +21,13 @@
 
 </head>
 <body>
+  <main class="pageForm">
 
   <!-- Rating state start -->
 
-  <form class="rating-form">
-    <h1>
+  <form class="ratingForm">
+    <img src="../src/assets/svg/icon-star.svg" alt="" class="ratingForm__star">
+    <h1 class="ratingForm__title">
       How did we do?
     </h1>
     <p>
@@ -33,35 +35,38 @@
       to help us improve our offering!
     </p>
 
-    <div>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+    <div class="ratingForm_buttons">
+      <button type="button" class="ratingForm_button">1</button>
+      <button type="button" class="ratingForm_button">2</button>
+      <button type="button" class="ratingForm_button">3</button>
+      <button type="button" class="ratingForm_button">4</button>
+      <button type="button" class="ratingForm_button">5</button>
     </div>
 
-    <button type="submit">Submit</button>
+    <button type="submit" class="ratingForm_submit">Submit</button>
   </form>
 
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
+  <div class="formResult">
+    <img src="../src/assets/svg/illustration-thank-you.svg" alt="">
+    <p class="formResult__selected">You selected <span class="formResult__value">1</span> out of 5</p>
 
-  You selected <!-- Add rating here --> out of 5
+    <h1>Thank you!</h1>
 
-  Thank you!
+    <p class="formResult__text">We appreciate you taking the time to give a rating. If you ever need more support,
+    don’t hesitate to get in touch!</p>
+  </div>
 
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
 
   <!-- Thank you state end -->
-
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Paloma Cardoso</a>.
   </div>
+  <script src="../src/scripts/app.js"></script>
+</main>
 </body>
 </html>

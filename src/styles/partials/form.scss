@@ -1,0 +1,82 @@
+.ratingForm {
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background: $dark-blue;
+
+  max-width: 430px;
+  margin: 20px;
+  padding: 30px;
+
+  border-radius: 30px;
+
+  .ratingForm__star {
+    background: $medium-blue;
+    padding: 12px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+  }
+
+  .ratingForm__title {
+    color: $white;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  p {
+    line-height: 22px;
+  }
+
+  .ratingForm_buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 26px 0;
+
+    .ratingForm_button {
+      background-color: $medium-blue;
+      color: $white;
+
+      border: none;
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      transition: background-color 0.2s linear;
+
+      &:hover {
+        background: $orange;
+      }
+
+      &:active {
+        background: $light-orange;
+      }
+    }
+  }
+
+  .ratingForm_submit {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 21px;
+    color: $white;
+    background: $orange;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.2s linear;
+
+
+    &:hover {
+      background: $white;
+      color: $orange;
+    }
+
+    &:active {
+      background: $medium-white;
+      color: $orange;
+    }
+  }
+
+
+}
